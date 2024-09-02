@@ -1,3 +1,14 @@
+/*
+ * Filename: d:\pk\Frontend\src\context\StoreContext.jsx
+ * Path: d:\pk\Frontend
+ * Created Date: Monday, September 2nd 2024, 8:56:15 am
+ * Author: Sidhant Singh
+ * 
+ * Copyright (c) 2024 Trinom Digital Pvt Ltd
+ */
+
+
+
 import { createContext, useEffect, useState } from "react"
 import axios from 'axios'
 
@@ -6,7 +17,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "http://localhost:4000"
+  const url = "https://fooddeliverydummy.onrender.com"
   const [token , setToken] = useState("");
   const [food_list,setFoodList] = useState([])
 
